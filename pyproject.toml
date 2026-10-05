@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "precheck"
+version = "0.1.0"
+description = "Decide what, if anything, a fact-checker should check in a user's input"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "Apache-2.0"}
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["precheck*"]
+
+[tool.setuptools.package-data]
+precheck = ["precheck.md"]
